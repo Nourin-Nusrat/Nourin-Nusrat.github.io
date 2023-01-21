@@ -4,154 +4,281 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Custom File's Link-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
 </head>
-<body>
-    <div class ="container">
-        <div class ="left_side">
-            <div class = "profile">
-                <div class ="image">
-                    <img src="https://github.com/Nourin-Nusrat/Nourin-Nusrat.github.io/blob/main/20201206_163140.jpg?raw=true">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+
+    <!--Navbar-->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+
+
+                <i class="fas fa-stream navbar-toggler-icon"></i>
+
+
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav menu-navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item mt-3 mt-lg-0">
+                    <a class="main-btn" href="#contact">Hire me</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!--Navbar exit-->
+    <!--Banner section-->
+    <section id = "home" class="banner_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center text-md-start">
+                    <h6>Welcome</h6>
+                    <h1>I'm Nourin Nusrat Jhahan<br><span>Software Engineer</span><br></h1>
+                    <div class="mt-4">
+                        <a class="main-btn">Download CV</a>
+                    </div>
                 </div>
-                <h3>NOURIN NUSRAT JHAHAN
-                <br><span>Software Engineer</span></h3>
             </div>
-            <div class = "contactInfo">
-                <h3 class="title">contact Info</h3>
-                <ul>
-                    <li>
-                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <span class="text">01793658831</span>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                        <span class="text">nourinnusratjhahan@gmail.com</span>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
-                        <span class="text">Nourin-Nusrat</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="contactInfo language">
-                <h3 class="title">language</h3>
-                <ul>
-                    <li>
-                        <span class="text">Bengali</span>
-                        <span class="percent">
-                            <div style="width: 100%;"></div>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="text">English</span>
-                        <span class="percent">
-                            <div style="width: 85%;"></div>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="text">Arabic</span>
-                        <span class="percent">
-                            <div style="width: 40%;"></div>
-                        </span>
-                    </li>
-                </ul>
-            </div>
+
         </div>
-        <div class = "right_side">
-            <div class="about">
-                <h2 class ="title2">Education</h2>
-                <div class="box">
-                    <div class="year_company">
-                        <h5>2017</h5>
-                    </div>
-                    <div class="text">
-                        <h4>SSC</h4>
-                        <p>Board of Chittagong</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="year_company">
-                        <h5>2019</h5>
-                    </div>
-                    <div class="text">
-                        <h4>HSC</h4>
-                        <p>Board of Rajshahi</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="year_company">
-                        <h5>2024</h5>
-                    </div>
-                    <div class="text">
-                        <h4>bachelor of science in Engineering</h4>
-                        <p>Computer science & engineering<br>University of rajshahi</p>
-                    </div>
-                </div>
+    </section>
+    <!--banner exit-->
+    <!--about-->
+    <section id = "about" class="about_wrapper">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <img src="images/bg-image2.jpg" class="img-fluid rounded-3" alt="About-us">
+          </div>
+          <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+            <div class="my-3 my-lg-0">
+              <span class="subtitle">My About Details</span>
+              <h2>About me</h2>
+              <p>I am a Software Engineer. Well-versed in numerous programming languages including HTML5, Java OOP, C, C++. Have skill in 3D Designing.</p>
             </div>
-            <div class="about">
-                <h2 class ="title2">Experience</h2>
-                <div class="box">
-                    <div class="year_company">
-                        <h5>2020 - 2021</h5>
-                        <h5>Tinkers Technologies LTD</h5>
+            <div class="pt-4">
+              <ul class="nav nav-pills justify-content-center justify-content-lg-between mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-skill-tab" data-bs-toggle="pill" data-bs-target="#pills-skill" type="button" role="tab" aria-controls="pills-skill" aria-selected="true">Main Skill</button>
+                </li>
+
+
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education" type="button" role="tab" aria-controls="pills-education" aria-selected="false">Education</button>
+                </li>
+
+
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-experience-tab" data-bs-toggle="pill" data-bs-target="#pills-experience" type="button" role="tab" aria-controls="pills-experience" aria-selected="false">Experience</button>
+                </li>
+
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-skill" role="tabpanel" aria-labelledby="pills-skill-tab">
+                  <div class="single-progress">
+                    <h6>Designing</h6>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <div class="text">
-                        <h4>Creative Content Intern</h4>
-                        <p>6 months internship at Tinkers technologies limited as creative content creator</p>
+                    <span class="lebel">95%</span>
+                  </div>
+                  <div class="single-progress">
+                    <h6>Programming</h6>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
+                    <span class="lebel">85%</span>
+                  </div>
+                  <div class="single-progress">
+                    <h6>Management</h6>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span class="lebel">75%</span>
+                  </div>
+                  <div class="single-progress">
+                    <h6>Development</h6>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 81%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span class="lebel">81%</span>
+                  </div>
+                </div>
+
+                
+                <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab">
+                  <ul class="text-start ps-0">
+                    <li><a href="#">2019 - present</a>
+                    </li>
+                    <li>
+                      <a href="#">Bsc. in Computer Science & Engineering </a>
+                    </li>
+                    <li>
+                      <a href="#">University of Rajshahi </a>
+                    </li>
+
+                  </ul>
 
                 </div>
-            </div>
-            
-            <div class="about skills">
-                <h2 class="title2">Skills</h2>
-                <div class="box">
-                    <div class ="year_company">
-                        <h5>3D modeling</h5>
-                    </div>
-                    <div class="text">
-                        <h4>blender</h4>
-                    </div>
+
+
+                <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab">
+                  <ul class="text-start ps-0">
+                    <li><a href="#">1 year experience of programming in c++ language</a>
+                    </li>
+                    <li>
+                      <a href="#">Designed 3D game</a>
+                    </li>
+                    <li>
+                      <a href="#">6 months of internship as content intern in Tinkers Technologies Ltd</a>
+                    </li>
+
+                  </ul>
                 </div>
-                <div class="box">
-                    <div class ="year_company">
-                        <h5>Programming language</h5>
-                    </div>
-                    <div class="text">
-                        <h4>c,c++,java,python</h4>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class ="year_company">
-                        <h5>front end</h5>
-                    </div>
-                    <div class="text">
-                        <h4>html,css</h4>
-                    </div>
-                </div>
-                
+              </div>
             </div>
-            <div class="about interest">
-                <h2 class="title2">project</h2>
-                <ul>
-                    <li>a 3D game</li>
-                </ul>
-            </div>
-            <div class="about interest">
-                <h2 class="title2">Interest</h2>
-                <ul>
-                    <li><i class="fa fa-scissors" aria-hidden="true"></i>Crafts</li>
-                    <li><i class="fa fa-trophy" aria-hidden="true"></i>Chess</li>
-                    <li><i class="fa fa-cutlery" aria-hidden="true"></i>Cooking</li>
-                    <li><i class="fa fa-pagelines" aria-hidden="true"></i>planting</li>
-                    <li><i class="fa fa-paint-brush" aria-hidden="true"></i>paint</li>
-                    <li><i class="fa fa-music" aria-hidden="true"></i>Singing</li>
-                </ul>
-            </div>
-            
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
+    <!--about exit-->
+    <!--service-->
+    <section id = "services" class = "services_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="my-3 my-lg-0">
+            <span class="subtitle">What can i do for you?</span>
+            <h2>My service</h2>
+            <p>Here it is</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text center">
+                <img src="./images/game.jpg" alt="servic" class="img-fluid mb-4">
+                <h3>Game Designing</h3>
+                <p>I design 3D and 2D games for windows/ios/android devices</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--service exit-->
+    <!--contact-->
+    <section id="contact" class="contact_wrapper">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1 pe-lg-5 text-lg-start text-center">
+            <span class ="subtitle">Information</span>
+            <h2>Contact me</h2>
+            <div class="row call_details mb-4">
+              <label class="col-sm-3 col-lg-4">Call me directly:</label>
+
+              <div class="col-sm-9 col-lg-8 mb-3 mb-lg-2 text-md-start">
+                <a href="javascript:void(0)">+8801821615044</a>
+              </div>
+
+              <label class="col-sm-3 col-lg-4">Contact Email:</label>
+
+              <div class="col-sm-9 col-lg-8 mb-3 mb-lg-2 text-md-start">
+                <a href="mailto:example@gmail.com">nourinnusratjhahan@gmail.com</a>
+              </div>
+
+          </div>
+          <form>
+            <div class="mb-4">
+              <input type = "text" class="form-control" placeholder="Your Name..." autocomplete="off">
+            </div>
+            <div class="mb-4">
+              <input type = "number" class="form-control" placeholder="Your phone..." autocomplete="off">
+            </div>
+            <div class="mb-4">
+              <input type = "email" class="form-control" placeholder="Your email..." autocomplete="off">
+            </div>
+            <div class="mb-4">
+              <textarea cols="40" rows="4" class ="form-control" id="message" placeholder="Write a message..." autocomplete="off">
+
+              </textarea>
+            </div>
+            <button type="submit" class="main-btn">Submit</button>
+          </form>
+          </div>
+          <div class="col-lg-6 order-1 mb-4 order-lg-1 mb-lg-0">
+            <!--img src="./images/contact1.jpg" class="img-fluid"-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--contact exit-->
+    <!--footer-->
+
+    <section id ="contact" class="footer_wrapper mt-3 mt-md-0">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-lg-4 col-md-6 text-center text-md-start">
+            <div class="footer-logo mb-3 mb-md-0">
+              <!--img src="images/portfolio.jpg" class="img-fluid"-->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <ul class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center social-icon mb-3 mb-md-0">
+
+              <li>
+                <a href="https://www.facebook.com/nourinnusrat.punom"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/Nourin-Nusrat"><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/nourin-nusrat-jhahan-544057263/"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="copyright-text text-lg-start text-center mb-3 mb-lg-0">
+              <!--p class="mb-0">Copyright 0 2022<a href="#"> All Rights reserve</a></p-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer exit-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>    
+    <!--Custom Js Link-->
+    <script src="js/main.js"></script>
 </body>
 </html>
